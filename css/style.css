@@ -252,16 +252,10 @@ nav a:hover{
 }
 
 .artist-card{
-
-    position:relative;
-
-    height:450px;
-
-    overflow:hidden;
-
-    border-radius:30px;
-
-    transition:.4s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    height: 500px;
 }
 
 .artist-card img{
@@ -285,35 +279,25 @@ nav a:hover{
 }
 
 .artist-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    z-index: 2;
 
-    position:absolute;
-
-    inset:0;
-
-    background:linear-gradient(
-        transparent,
-        rgba(0,0,0,.95)
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.4),
+        transparent
     );
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:flex-end;
-
-    padding:30px;
 }
 
+
 .artist-overlay h3{
-    font-size:2rem;
-
-    color:white;
-
-    font-weight:700;
-   
-    letter-spacing:1px;
-
-    text-shadow:0 4px 15px rgba(0,0,0,.8);
+    margin: 0;
+    color: white;
 }
 
 .artist-card:hover{
